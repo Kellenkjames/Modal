@@ -1,6 +1,6 @@
 const modalButton = document.querySelector('.jsModalButton')
 const modalClose = document.querySelector('.jsModalClose')
-const modalOverlay = document.querySelector('.modal-overlay')
+const modalOverlay = document.querySelector('.jsModalOverlay')
 
 modalButton.addEventListener('click', event => {
   // Add class to the body when button has been clicked
@@ -12,15 +12,9 @@ modalClose.addEventListener('click', event => {
 })
 
 modalOverlay.addEventListener('click', event => {
-  document.body.classList.remove('is-open')
+    if (event.target.matches('.modal-overlay')) {
+      document.body.classList.remove('is-open')
+    }
 })
 
-
-
-/* Step 1 
-  
-  - When the user hits 'click me' the modal opens 
-  - When the user clicks outside of the modal - we want it to close 
-
-  */
 
