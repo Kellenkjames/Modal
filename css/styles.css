@@ -46,6 +46,7 @@ h2 {
   background-color: var(--magenta-300);
   color: #fff;
   cursor: pointer;
+  transition: background-color .3s ease-out;
 }
 
 .button:hover,
@@ -94,16 +95,14 @@ main {
   right: 0;
   z-index: -1;
   opacity: 0;
-  visibility: hidden;
-  transition: visibility 0s, opacity 0.3s linear;
+  transition: opacity .3s ease-out, z-index 0s 0.3s linear;
 }
 
 .is-open .modal-overlay {
   z-index: 1;
   opacity: 1;
-  visibility: visible;
+  transition-delay: 0s;
 }
-
 
 .modal {
   display: grid;
