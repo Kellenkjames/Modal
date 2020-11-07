@@ -17,6 +17,10 @@ modalOverlay.addEventListener('click', event => {
   }
 })
 
-// Animating the hand 
+
+
+
+
+
 
 

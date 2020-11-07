@@ -79,6 +79,7 @@ main {
   margin-right: auto;
   margin-left: auto;
   color: var(--magenta-300);
+  animation: moveUp 1s ease 0s 1 normal none;
 }
 
 /* Modal */
@@ -140,4 +141,18 @@ main {
   opacity: 1;
   background: var(--magenta-300);
   border-color: var(--magenta-600);
+}
+
+/* Animations */
+@keyframes moveUp {
+  
+  0% {
+    opacity: 0;
+    transform: translateY(300px)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0)
+  }
 }
